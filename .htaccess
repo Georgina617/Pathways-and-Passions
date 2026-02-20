@@ -1,0 +1,12 @@
+RewriteEngine on
+
+RewriteRule ^$ index.php [L,NC]
+
+RewriteRule ^article/([0-9]+)/(.+)/$ post.php?post_id=$1&title=$2[L,NC]
+
+RewriteRule ^store_product/([0-9]+)/(.+)/$ product.php?product_id=$1&title=$2[L,NC]
+
+
+
+
+
